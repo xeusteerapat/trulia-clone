@@ -18,7 +18,7 @@ body {
   display: inline-block;
   padding: 0.75rem;
   position: relative;
-  border-radius: 7.5px;
+  border-radius: 8px;
 }
 
 #main-nav ul li a {
@@ -47,7 +47,7 @@ body {
   position: absolute;
   left: 0;
   width: 200px;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 #main-nav ul li:hover ul li {
@@ -78,7 +78,7 @@ body {
   width: 100%;
   object-fit: cover;
   height: 450px;
-  border-radius: 7.5px;
+  border-radius: 8px;
   z-index: -1;
 }
 
@@ -100,10 +100,12 @@ body {
 
 .showcase-buttons button {
   cursor: pointer;
-  background-color: transparent;
-  border-radius: 7.5px;
+  background: rgba(131, 131, 131, 0.5);
+  transition: all 0.3s ease-out;
+  border-radius: 8px;
   padding: 0.75rem 1.75rem;
   font-size: 18px;
+  font-weight: normal;
   color: white;
   border: none;
 }
@@ -111,4 +113,77 @@ body {
 .showcase-buttons button:hover {
   color: teal;
   background: white;
+}
+
+.showcase-buttons button:focus {
+  color: teal;
+  background: white;
+  font-weight: bold;
+}
+
+.showcase-input input {
+  position: absolute;
+  background: white;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(59, 65, 68);
+  display: inline-block;
+  box-sizing: border-box;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 8px 64px 8px 16px;
+  border: none;
+}
+
+#category {
+  padding-top: 3.5rem;
+}
+
+.category-title h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-items {
+  padding: 0.75rem;
+  margin: 0.75rem;
+  text-align: center;
+  flex: 1;
+}
+
+.category-items img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-items h2 {
+  padding: 1rem 0 1rem 0;
+}
+
+.category-items button {
+  cursor: pointer;
+  background: teal;
+  border-radius: 8px;
+  padding: 0.75rem 1.75rem;
+  margin: 1.25rem;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  border: none;
+}
+
+.category-items button:hover {
+  background: #fff;
+  color: teal;
+  border: 1px solid teal;
 }
