@@ -176,6 +176,11 @@ body {
   border-radius: 8px;
 }
 
+.category-items img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+}
+
 .category-items h2 {
   padding: 1rem 0 1rem 0;
 }
